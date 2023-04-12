@@ -35,7 +35,7 @@ const AnimatedNumbers = ({ value }) => {
 
 const about = () => {
   return (
-    <div>
+    <>
       <Head>
         <title>EnesBek | About Page</title>
         <meta name="description" content="about me" />
@@ -100,7 +100,7 @@ const about = () => {
           <Education />
         </Layout>
       </main>
-    </div>
+    </>
   );
 };
 
