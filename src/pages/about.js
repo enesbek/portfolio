@@ -40,12 +40,12 @@ const about = () => {
         <title>EnesBek | About Page</title>
         <meta name="description" content="about me" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center">
+      <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Lorem ipsum dolar sit" className="mb-16" />
           <div className="grid w-full grid-cols-8 gap-16">
             <div className="col-span-3 flex flex-col items-start justify-start">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light">
                 Biography
               </h2>
               <p className="font-medium my-4">
@@ -73,7 +73,7 @@ const about = () => {
                 <span className="inline-block text-6xl font-bold">
                   <AnimatedNumbers value={50} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
                   Github projects
                 </h2>
               </div>
@@ -81,7 +81,7 @@ const about = () => {
                 <span className="inline-block text-6xl font-bold">
                   <AnimatedNumbers value={2} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
                   years of experience
                 </h2>
               </div>
@@ -89,7 +89,7 @@ const about = () => {
                 <span className="inline-block text-6xl font-bold">
                   <AnimatedNumbers value={1} />+
                 </span>
-                <h2 className="text-xl font-medium capitalize text-dark/75">
+                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light">
                   medium article
                 </h2>
               </div>
