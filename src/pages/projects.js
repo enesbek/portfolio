@@ -9,17 +9,27 @@ import Image from "next/image";
 
 const FeaturedPorjects = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
+    <article className="w-full flex items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-10 relative dark:bg-dark dark:border-light">
+      <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
       <Link
         href={link}
         target="_target"
         className="w-1/2 cursor-pointer overflow-hidden rounded-lg"
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority
+          sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              50vw"
+        />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-between pl-6">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primary">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -27,7 +37,7 @@ const FeaturedPorjects = ({ type, title, summary, img, link, github }) => {
         >
           <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
         </Link>
-        <p className="my-2 font-medium text-dark">{summary}</p>
+        <p className="my-2 font-medium text-dark dark:text-light">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -35,7 +45,7 @@ const FeaturedPorjects = ({ type, title, summary, img, link, github }) => {
           <Link
             href={link}
             target="_blank"
-            className="ml-4 text-light rounded-lg bg-dark p-2 px-6 text-lg font-semibold"
+            className="ml-4 text-light rounded-lg bg-dark p-2 px-6 text-lg font-semibold dark:text-dark dark:bg-light"
           >
             Visit Project
           </Link>
@@ -47,7 +57,7 @@ const FeaturedPorjects = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ type, title, img, link, github }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 relative">
+    <article className="w-full flex flex-col items-center justify-between rounded-3xl border border-solid border-dark bg-light shadow-2xl p-6 relative dark:bg-dark dark:border-light">
       <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark" />
       <Link
         href={link}
@@ -57,7 +67,9 @@ const Project = ({ type, title, img, link, github }) => {
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-lg">{type}</span>
+        <span className="text-primary font-medium text-lg dark:text-primary">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -89,7 +101,7 @@ const projects = () => {
         <title>EnesBek | About Page</title>
         <meta name="description" content="about me" />
       </Head>
-      <main className="w-full mb-16 flex flex-col items-center justify-center">
+      <main className="w-full mb-16 flex flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText text="Imagination Lorem Ipsum" className="mb-16" />
           <div className="grid grid-cols-12 gap-24 gap-y-32">
