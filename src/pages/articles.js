@@ -6,6 +6,7 @@ import Image from "next/image";
 import React from "react";
 import articleImg from "../assets/article1.png";
 import articleImg2 from "../assets/articleImg2.png";
+import { HireMe } from "@/components/HireMe";
 
 const FeaturedArticle = ({ img, title, time, summary, link }) => {
   return (
@@ -27,7 +28,7 @@ const FeaturedArticle = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="capitalize text-2xl font-bold my-2 hover:underline">
+        <h2 className="capitalize text-2xl font-bold my-2 hover:underline xs:text-lg">
           {title}
         </h2>
       </Link>
@@ -48,8 +49,11 @@ const articles = () => {
       </Head>
       <main className="w-full mb-16 flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
-          <AnimatedText text="Lorem Ipsum Dolor" className="mb-16" />
-          <ul className="grid grid-cols-2 gap-16">
+          <AnimatedText
+            text="Lorem Ipsum Dolor"
+            className="mb-16 lg:!text-7xl sm:mb-8 sm:!text-6xl xs:text-4xl"
+          />
+          <ul className="grid grid-cols-2 gap-16 md:grid-cols-1 lg:gap-8 md:gap-y-16">
             <FeaturedArticle
               title="Authorization with Metamask"
               summary="In this article, I will discuss the authorization method that should be used in decentralized applications (dApps) with MetaMask."
@@ -65,6 +69,7 @@ const articles = () => {
               img={articleImg2}
             />
           </ul>
+          <HireMe />
         </Layout>
       </main>
     </>
