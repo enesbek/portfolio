@@ -2,7 +2,7 @@ import { AnimatedText } from "@/components/AnimatedText";
 import { Layout } from "@/components/Layout";
 import Head from "next/head";
 import React, { useEffect, useRef } from "react";
-import ProfilePicture from "../assets/profile.jpeg";
+import ProfilePicture from "../assets/about.jpg";
 import Image from "next/image";
 import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { Skills } from "@/components/Skills";
@@ -44,7 +44,7 @@ const about = () => {
       <main className="flex w-full flex-col items-center justify-center dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
-            text="Lorem ipsum dolar sit"
+            text="Enes Bek"
             className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8"
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
@@ -53,16 +53,17 @@ const about = () => {
                 Biography
               </h2>
               <p className="font-medium my-4">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Suscipit qui magnam excepturi est, aliquid eius obcaecati ullam,
-                ad iste id dolor ipsa aperiam, quibusdam hic voluptates velit
-                nobis exercitationem facilis.{" "}
+                As a frontend developer with a passion for open source and
+                current technologies, I create beautiful, product-oriented
+                designs that are a work of art. With a focus on continuous
+                learning and improvement.
               </p>
               <p className="font-medium my-4">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-                optio magnam saepe, vero beatae repellendus error officiis quod,
-                natus maxime quidem vel pariatur aperiam, ullam earum ipsa id
-                asperiores cumque?
+                I have led and managed development teams, utilizing Agile/Scrum
+                methodologies and Azure DevOps for project management. I have
+                also collaborated with cross-functional teams to deliver
+                high-quality, complex web applications and advertising
+                management applications using React, HTML, CSS, and JavaScript.
               </p>
             </div>
             <div className="col-span-3 relative h-max rounded-xl border-2 border-solid border-dark bg-light p-8 xl:cols-span-4 md:order-1 md:col-span-8">

@@ -1,7 +1,7 @@
 import { Layout } from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
-import ProfilePhoto from "../assets/profile.jpeg";
+import ProfilePhoto from "../assets/portfolio.png";
 import { AnimatedText } from "@/components/AnimatedText";
 import Link from "next/link";
 import { LinkArrow } from "@/components/Icons";
@@ -31,14 +31,16 @@ export default function Home() {
             </div>
             <div className="w-1/2 flex flex-col items-center self-center lg:w-full lg:text-center">
               <AnimatedText
-                text="Enes Bek Lorem ipsum dolor"
+                text="Crafting code that's a work of art."
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-small sm:text-xs">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Repellat et veniam sapiente maiores vel eveniet suscipit ipsam
-                tempore accusantium eos impedit animi tempora numquam, accusamus
-                amet explicabo modi doloremque deleniti.
+                As an open-source enthusiast and frontend developer, I'm
+                passionate about creating beautiful, user-centered designs that
+                are powered by the latest front-end technologies. With a focus
+                on continuous learning and improvement, I constantly seek to
+                enhance my skills and stay up-to-date with the latest trends and
+                best practices in the industry.
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
