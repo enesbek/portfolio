@@ -35,7 +35,7 @@ export default function Home() {
                 className="!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl"
               />
               <p className="my-4 text-base font-medium md:text-small sm:text-xs">
-                As an open-source enthusiast and frontend developer, I'm
+                As an open-source enthusiast and frontend developer, I&apos;m
                 passionate about creating beautiful, user-centered designs that
                 are powered by the latest front-end technologies. With a focus
                 on continuous learning and improvement, I constantly seek to
