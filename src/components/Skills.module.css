@@ -1,0 +1,85 @@
+.skillsSection {
+  padding-block: 6rem;
+  background-color: var(--bg-secondary);
+}
+
+.tabsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-block-end: 3rem;
+}
+
+.tabBtn {
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  padding: 0.6rem 1.2rem;
+  border-radius: 9999px;
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast), transform var(--transition-fast);
+}
+
+.tabBtn:hover {
+  background-color: var(--bg-secondary);
+  border-color: var(--border-hover);
+  color: var(--text-primary);
+}
+
+.tabActive {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.tabActive:hover {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.skillCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform var(--transition-normal);
+}
+
+.skillCard:hover {
+  transform: translateY(-4px) scale(1.02);
+}
+
+.iconWrapper {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(20, 184, 166, 0.1));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  margin: 0 auto 1rem;
+}
+
+.skillName {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.skillLevel {
+  font-size: var(--font-size-xs);
+  color: var(--text-muted);
+  margin-block-start: 0.25rem;
+}
