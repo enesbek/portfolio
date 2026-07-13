@@ -16,7 +16,7 @@ const TIMELINE_DATA: TimelineItem[] = [
     id: "huawei",
     role: "Frontend Engineer",
     company: "Huawei",
-    date: "2025/04 – Present",
+    date: "2025/04 – 2026/06",
     location: "Ankara, Turkey",
     description: "Developing system-level UI features on HarmonyOS using ArkTS and TypeScript.",
     bullets: [
