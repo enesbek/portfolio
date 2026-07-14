@@ -162,8 +162,28 @@ export default function Header() {
             )}
           </button>
 
-          <a href="#contact" className="btn btn-primary" style={{ paddingBlock: "0.5rem" }}>
-            Let's Talk
+          <a
+            href="/resume.pdf"
+            download="Enes_Bek_Resume.pdf"
+            className="btn btn-secondary"
+            style={{ paddingBlock: "0.5rem" }}
+          >
+            Download CV
+            <svg
+              width="14"
+              height="14"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2.5}
+                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+              />
+            </svg>
           </a>
         </div>
       </div>
